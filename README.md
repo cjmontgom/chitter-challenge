@@ -1,17 +1,36 @@
-Chitter Challenge
-=================
+# Shitter
 
-Set up:
--------
-* username$ bundle install
+A shit version of Twitter (to learn the basics of connecting to an SQL database when doing web development).
 
-Create the database:
-* username$ psql -d postgres -U <your username>
-* postgres=# CREATE DATABASE shitter;
-* postgres=# CREATE DATABASE shitter_test;
-*
-*
-*
+
+### Quickstart
+
+```
+# Ensure you have rbenv and ruby installed globally 
+
+# Clone the repository
+git clone https://github.com/cjmontgom/battle-game
+
+# Go inside the directory
+cd battle-game
+
+# Install dependencies
+gem install bundler
+bundle install
+
+# Set up the local database
+psql -d postgres -U <your-username>
+CREATE DATABASE shitter;
+CREATE DATABASE shitter_test;
+
+# Start the development server on port 3000
+bundle exec rackup -p 3000
+
+# Go to http://localhost:3000/ in your browser to start peeping
+
+# Be sure to read the terms and conditions
+
+```
 
 
 Features:
